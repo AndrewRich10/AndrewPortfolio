@@ -3,7 +3,7 @@ import './index.css';
 import Box from '@mui/material/Box';
 import Nav from './components/nav.tsx';
 import Universitle from "./assets/Universitle.png";
-import Richcraft from "./assets/richcraft.png";
+import Richcraft from "./assets/Richcraft.png";
 
 const Home: React.FC = () => {
   return (
