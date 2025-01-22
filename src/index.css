@@ -1,0 +1,203 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Work+Sans:wght@300;400&display=swap');
+
+/* Define Color Palette */
+:root {
+  --wood-grain-beige: #D4A373;
+  --forest-green: #3e632a;
+  --charcoal-gray: #333333;
+  --soft-white: #FAF9F6;
+  --rich-amber: #B78628;
+  --font-header: 'Montserrat', sans-serif;
+  --font-body: 'Work Sans', sans-serif;
+  --timer: 1;
+}
+
+/* General Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-body);
+  color: var(--charcoal-gray);
+  background-attachment: fixed;
+  background-color: var(--soft-white);
+  background-attachment: fixed;
+  overflow-x:hidden;
+}
+
+/* FIX BACKGROUND FOR MOBILE */
+@media (hover: none) {
+  body {
+      background-attachment: initial;
+  }
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: var(--charcoal-gray);
+  color: var(--soft-white);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-family: var(--font-header);
+  margin: 0;
+}
+
+/* Hero Section */
+.hero {
+  animation: 1.5s fadeInUp;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.hero h2 {
+  font-family: var(--font-header);
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
+}
+
+.hero p {
+  font-size: 1.25rem;
+}
+
+/* About Section */
+.about {
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: var(--soft-white);
+  color: var(--charcoal-gray);
+}
+
+.about h3 {
+  font-family: var(--font-header);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+.footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--charcoal-gray);
+  color: var(--soft-white);
+  padding: 1rem;
+}
+
+/* Box */
+.box {
+  background-color: var(--soft-white);
+  color: var(--charcoal-gray);
+  padding: 16px;
+  width: 70%;
+  margin: 0 auto;background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='15' ry='15' stroke='%23333333FF' stroke-width='2' stroke-dasharray='' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: 1.5s fadeInUp;
+}
+
+/* Miscellaneous */
+
+.logo {
+  height: 40px;
+  filter: invert(100%) sepia(0%) saturate(4178%) hue-rotate(183deg) brightness(115%) contrast(95%);
+}
+
+.outdoors {
+  background-image: url("./assets/yosemite_conservancy_1920x1080_scot_miller_tunnel_view_0.jpg");
+  overflow: auto;
+  position: relative;
+  background-size:cover;
+}
+
+.social {
+  animation: 1.5s fadeInUp;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px; 
+  filter: brightness(0) saturate(100%) invert(16%) sepia(0%) saturate(15%) hue-rotate(167deg) brightness(102%) contrast(89%);
+}
+
+.project {
+  animation: 1.5s fadeInUp;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 0 auto;
+  width: 300px;
+  height: 200px;
+  
+}
+
+.projecttab {
+  animation: 1.5s fadeInUp;
+  border-radius: 15px;
+  border: 1.5px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 0 auto;
+  width: 300px;
+  height: 200px; 
+  flex-wrap: wrap;
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.wavy {
+  animation-name: wavy;
+  animation-duration: 1.3s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+@keyframes wavy {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -15px;
+  }
+  100% {
+    top: 0px;
+  }
+}
