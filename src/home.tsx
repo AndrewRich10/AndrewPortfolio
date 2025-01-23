@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import Nav from './components/nav.tsx';
 import Universitle from "./assets/Universitle.png";
 import Richcraft from "./assets/Richcraft.png";
+import SearchEngine from "./assets/SearchEngine.png";
 
 const Home: React.FC = () => {
   return (
@@ -32,8 +33,13 @@ const Home: React.FC = () => {
               <img src={Universitle} alt="Screenshot of Universitle Design" className='projecttab'/>
         </a>
         <a href='https://therichcraft.com' target="_blank" rel="noopener noreferrer">
-              <img src={Richcraft} alt="Screenshot of Universitle Design" className='projecttab' />
+              <img src={Richcraft} alt="Screenshot of Richcraft Website" className='projecttab' />
         </a>
+        </div>
+        <div className='project'>
+          <a href='https://github.com/datrujil/SearchEngine' target="_blank" rel="noopener noreferrer">
+                <img src={SearchEngine} alt="Screenshot of ICS Search Engine project" className='projecttab' />
+          </a>
         </div>
       </main>
       <footer className="footer">
