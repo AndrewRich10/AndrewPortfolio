@@ -1,0 +1,25 @@
+
+  .line-animation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  svg {
+    max-width: 60%;
+    max-height: 60%;
+  }
+  
+  #line {
+    fill: none;
+    stroke-width: 4;
+  }
+  
+  #animated-line {
+    stroke: currentColor;
+  }
+  
+  #animated-line-mask {
+    stroke: white;
+  }
+  
