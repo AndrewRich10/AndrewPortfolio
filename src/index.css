@@ -201,6 +201,11 @@ header h1 {
     grid-template-columns: repeat(2, 1fr); /* Change to 2 columns */
   }
 }
+@media (max-width: 720px) {
+  .project {
+    grid-template-columns: repeat(1, 1fr); /* Change to 2 columns */
+  }
+}
 
 @keyframes fadeInUp {
   0% {
