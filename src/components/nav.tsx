@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './nav.css';
 import Logo from '../assets/ar-logo.svg'
 
@@ -8,6 +8,10 @@ const Nav: React.FC = () => {
     const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
     };
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
     <header className="header">
