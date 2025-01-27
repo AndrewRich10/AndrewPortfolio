@@ -21,6 +21,7 @@ const Nav: React.FC = () => {
             <nav className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
                 <ul>
                 <li><a href="/">About</a></li>
+                <li><a href="/cooking">Cooking</a></li>
                 <li><a href="/outdoors">Outdoors</a></li>
                 <li><a href="/contact">Contact</a></li>
                 </ul>

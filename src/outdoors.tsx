@@ -3,7 +3,6 @@ import './index.css';
 import Box from '@mui/material/Box';
 import Slider from './components/slider.tsx';
 import Nav from './components/nav.tsx';
-import LineAnimation from './components/LineAnimation.tsx';
 
 const Outdoors: React.FC = () => {
   return (
@@ -18,7 +17,6 @@ const Outdoors: React.FC = () => {
           <Box component="div" className="slider-box">
              <Slider />
            </Box>
-           <LineAnimation />
         </section>
       </main>
       <footer className="footer">
