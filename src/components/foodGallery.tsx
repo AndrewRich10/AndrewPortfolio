@@ -2,7 +2,7 @@ import React from 'react';
 import './foodGallery.css';
 import './../index.css';
 import Modal from 'react-modal';
-import { color, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 import f1 from '../assets/food/food1.png';
 import f2 from '../assets/food/food2.png';
