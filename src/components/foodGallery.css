@@ -59,6 +59,7 @@ ul {
   border-radius: 8px;
   box-shadow: none; /* Remove box shadow during flip */
   max-width: 1000px;
+  overflow: scroll;
 }
 
 /* Note Card */
@@ -76,8 +77,7 @@ ul {
   align-items: flex-start; /* Align text to the left */
   justify-content: flex-start; /* Start content at the top */
   font-family: 'Courier New', Courier, monospace;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  overflow-y: auto;
 
   /* Lined Paper Effect */
   background: repeating-linear-gradient(
@@ -86,15 +86,13 @@ ul {
       #ececec 23px,
       #ececec 25px
   );
-
+  background-attachment: local;
+  
   /* Hide backface during flip */
   backface-visibility: hidden;
   perspective: 1000px; /* Create depth for the flip effect */
 }
 
-.note-card::-webkit-scrollbar {
-  display: none;
-}
 
 /* Align text to lines */
 .note-card h2,
@@ -137,9 +135,9 @@ ul {
 /* Close Icon */
 .close-icon {
   position: absolute;
-  top: 8px;
-  right: 8px;
-  font-size: 18px;
+  top: 5px;
+  right: 10px;
+  font-size: 24px;
   font-weight: bold;
   color: #ff4b4b;
   cursor: pointer;
@@ -170,6 +168,7 @@ ul {
 
   .recipe-grid {
     grid-template-columns: repeat(1, 1fr);
+    padding-top: 10px;
   }
 
   .foodimg {
