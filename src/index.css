@@ -259,8 +259,7 @@ header h1 {
   position: relative;
   top: 0;
   left: 0;
-  text-shadow: var(--charcoal-gray) -10px 10px 15px;
-  color: var(--forest-green);
+  text-shadow: var(--charcoal-gray) -10px 10px 20px;
 }
 
 @keyframes wavy {

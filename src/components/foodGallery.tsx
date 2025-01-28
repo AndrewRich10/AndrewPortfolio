@@ -20,9 +20,9 @@ import f11 from '../assets/food/food11.png';
 
 const FoodGallery: React.FC = () => {
     const [isOpen, setIsOpen] = React.useState(false);
+    
     const openModal = () => setIsOpen(true);
     const closeModal = () => setIsOpen(false);
-
     return (
         <div className='hero'>
             <div className='foodgallery'>

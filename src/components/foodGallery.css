@@ -33,7 +33,6 @@ ul {
 
 /* Modal Overlay */
 .note-overlay {
-  background-color: rgba(0, 0, 0, 0.5); /* Dimmed background */
   position: fixed;
   top: 0;
   left: 0;
@@ -59,9 +58,8 @@ ul {
   border-radius: 8px;
   box-shadow: none; /* Remove box shadow during flip */
   max-width: 1000px;
-  overflow: scroll;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  overflow: auto;
+  box-shadow: -20px 10px rgba(0, 0, 0, 0.1);;
 }
 
 /* Note Card */
@@ -79,8 +77,10 @@ ul {
   align-items: flex-start; /* Align text to the left */
   justify-content: flex-start; /* Start content at the top */
   font-family: 'Courier New', Courier, monospace;
-  overflow: none;
-
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  
   /* Lined Paper Effect */
   background: repeating-linear-gradient(
       white 0px,
@@ -89,14 +89,16 @@ ul {
       #ececec 25px
   );
   background-attachment: local;
+  background-size: 100% 25px; /* Match the line height */
+  background-position: 0 0;
   
   /* Hide backface during flip */
   backface-visibility: hidden;
   perspective: 1000px; /* Create depth for the flip effect */
 }
 
-.note-modal::-webkit-scrollbar {
-  display: none; /* Completely hide scrollbar */
+.note-card::-webkit-scrollbar {
+  display: none;
 }
 
 
