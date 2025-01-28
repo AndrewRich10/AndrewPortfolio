@@ -76,7 +76,8 @@ ul {
   align-items: flex-start; /* Align text to the left */
   justify-content: flex-start; /* Start content at the top */
   font-family: 'Courier New', Courier, monospace;
-  overflow: hidden;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 
   /* Lined Paper Effect */
   background: repeating-linear-gradient(
@@ -89,6 +90,10 @@ ul {
   /* Hide backface during flip */
   backface-visibility: hidden;
   perspective: 1000px; /* Create depth for the flip effect */
+}
+
+.note-card::-webkit-scrollbar {
+  display: none;
 }
 
 /* Align text to lines */
