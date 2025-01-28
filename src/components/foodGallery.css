@@ -59,7 +59,6 @@ ul {
   box-shadow: none; /* Remove box shadow during flip */
   max-width: 1000px;
   overflow: auto;
-  box-shadow: -20px 10px rgba(0, 0, 0, 0.1);;
 }
 
 /* Note Card */
@@ -80,6 +79,7 @@ ul {
   overflow: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  box-shadow: -20px 10px rgba(0, 0, 0, 0.1);;
   
   /* Lined Paper Effect */
   background: repeating-linear-gradient(
